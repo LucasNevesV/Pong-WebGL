@@ -1,0 +1,17 @@
+
+  canvas {
+    width: 800;
+    height: 500;
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+  
+  #scores {
+    text-align: center;
+    font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+    font-size:300%; 
+  }
