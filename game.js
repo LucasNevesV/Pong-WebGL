@@ -131,8 +131,11 @@ function goal(p){
 
 		html.scores.p1 = 0;
 		html.scores.p2 = 0;
-
+		let dica = document.getElementById('Dica');
+		dica.innerHTML = "'Espaço' para recomeçar";
 	}
+
+
 	html.scores.localization.innerHTML = html.scores.p1 +" - " + html.scores.p2;
 }
 	
@@ -226,8 +229,8 @@ var Ball = function (x,y){
 
 	this.color = [1,1,1];
 	this.radius = 10;
-	this.vx = 3;
-	this.vy = -4;
+	this.vx = 0;
+	this.vy = 0;
 	this.points = [x,y];
 	this.translation = [0,0] 
 	this.num_of_points = 10; 
@@ -310,6 +313,9 @@ function callbackOnKeyDown(event){
 
 			let resultado = document.getElementById('Resultado');
 			resultado.innerHTML = "";
+
+			let dica = document.getElementById('Dica');
+			dica.innerHTML = "";
 		}
 	}
 }
